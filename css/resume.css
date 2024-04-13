@@ -1,0 +1,109 @@
+header {
+    padding: 15px;
+    height: 30px;
+    display: flex;
+}
+
+header nav{
+    background-color: rgba(9, 9, 9, 0.9);
+    position: fixed;
+    right: 80px;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    z-index: 90;
+}
+
+.my-name{
+    z-index: 100;
+    position: fixed;
+    left: 50px;
+    top: -15px;
+}
+.my-name a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.main{
+    padding: 20px;
+}
+.main .header{
+   display: flex;
+}
+.title-header, .title{
+    text-transform: uppercase;
+} 
+
+.title-header{
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.line-header {
+    background-color: #18d26e;
+    width: 150px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container{
+    width: 70em;
+    height: auto;
+    margin: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* opacity: 0.8; */
+    color: #fffF;
+}
+
+.resume{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.sub-resume{
+    width: 50%;
+}
+
+.resume-item::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background-color: #18d26e;
+    position: absolute;
+    left: -9px;
+    top: 0;
+    border: 1px solid #18d26e;
+}
+
+.resume-item{
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 0 0 20px 20px ;
+    margin-top: -2px;
+    position: relative;
+}
+
+.resume-item:last-child{
+    padding-bottom: 0;
+}
+
+.resume-item h4{
+    color: #18d26e;
+    line-height: 18px;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.resume-item h5{
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 16px;
+    padding: 5px 15px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0;
+}
+
+.sub-resume .resume-item ul li {
+    padding-bottom: 10px;
+}

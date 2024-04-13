@@ -1,0 +1,115 @@
+header {
+    padding: 15px;
+    height: 30px;
+    display: flex;
+}
+
+header nav{
+    background-color: rgba(9, 9, 9, 0.9);
+    position: fixed;
+    right: 80px;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: right;
+    z-index: 90;
+}
+
+.my-name{
+    z-index: 100;
+    position: fixed;
+    left: 50px;
+    top: -15px;
+}
+.my-name a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.main{
+    padding: 20px;
+}
+.main .header{
+   display: flex;
+}
+.title-header, .title{
+    text-transform: uppercase;
+} 
+
+.title-header{
+    font-size: 14px;
+    color: #cfcfcf;
+}
+
+.line-header {
+    background-color: #18d26e;
+    width: 150px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.container{
+    width: 70em;
+    height: auto;
+    margin: 60px;
+    background-color: rgba(0, 0, 0, 0.9);
+    /* opacity: 0.8; */
+    color: #fffF;
+}
+
+.row-services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.services{
+    width: 30%;
+    margin: 20px;
+}
+.box{
+    background: rgba(204, 204, 204, 0.1);
+    padding: 80px 20px;
+    text-align: center;
+    transition: all ease-in-out 0.3s;
+}
+
+.icon-box::before{
+    content: "";
+    background: rgba(255, 255, 255, 0.15);
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.icon-box{
+    margin: 0 auto;
+    background-color: #18d26e;
+    border-radius: 5px;
+    width: 64px;
+    height: 64px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-out 0s;
+}
+.box:hover {
+    background: #18d26e;
+
+}
+.box:hover .icon-box{
+    background-color: #ffff;
+}
+.box:hover .icon-box i{
+    color: #18d26e;
+}
+.icon-box i{
+    color: white;
+    font-size: 24px;
+}
+
+.services .box p{
+    font-size: 16px;
+}

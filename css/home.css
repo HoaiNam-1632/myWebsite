@@ -1,0 +1,20 @@
+main {
+    padding: 20px;
+    color: #cfcfcf;
+}
+
+main h1 {
+    line-height: 1;
+    color: #ffff;
+}
+main h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 2;
+}
+
+main h2 span{
+    color: #ffff;
+    border-bottom: 2px solid #18d26e;
+    padding-bottom: 6px;
+}
